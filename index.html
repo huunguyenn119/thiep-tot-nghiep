@@ -219,7 +219,7 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
 
 <!-- =============== NÚT NHẠC (đổi src ở phần JS bên dưới) =============== -->
 <audio id="bgm" loop preload="none">
-  <source src="nhac-nen.mp3" type="audio/mpeg">
+  <source src=""C:\Users\huung\Downloads\Tìm Em (Remix).mp3"" type="audio/mpeg">
 </audio>
 <button id="musicToggle" class="paused" aria-label="Bật/tắt nhạc nền" onclick="toggleMusic()">
   <svg viewBox="0 0 24 24"><rect class="bar" x="4" y="8" width="3" height="8" rx="1"/><rect class="bar" x="10.5" y="4" width="3" height="16" rx="1" style="animation-delay:.2s"/><rect class="bar" x="17" y="10" width="3" height="4" rx="1" style="animation-delay:.4s"/></svg>
@@ -229,7 +229,7 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
 <div id="cover">
   <div class="seal"><svg viewBox="0 0 24 24"><path d="M12 2 1 7l11 5 9-4.09V17h2V7L12 2zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
   <span class="eyebrow">Trân trọng kính mời</span>
-  <h1 class="serif" id="coverGuest">Mến và người thương</h1>
+  <h1 class="serif" id="coverGuest">Hà và anh Công Anh</h1>
   <div class="guestline">đến chung vui cùng gia đình chúng tôi</div>
   <button id="enterBtn" onclick="openCover()">Mở thiệp</button>
 </div>
@@ -239,7 +239,7 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
   <div class="wrap">
     <span class="eyebrow">Lễ Tốt Nghiệp</span>
     <!-- ĐỔI TÊN TÂN KHOA & CHUYÊN NGÀNH Ở ĐÂY -->
-    <h1 class="serif grad-name">Cấn Thị Thu Hương</h1>
+    <h1 class="serif grad-name">Nguyễn Mến</h1>
     <div class="major script">Cử nhân Kiến trúc • Khoá 2022 – 2026</div>
     <div class="invite-to reveal">
       Thân mời <b id="heroGuest">bạn</b> đến dự buổi lễ đánh dấu một cột mốc thanh xuân rực rỡ.
@@ -268,15 +268,15 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
       <div class="event-card">
         <div class="label">Thời gian</div>
         <!-- ĐỔI NGÀY GIỜ Ở ĐÂY (và trong biến EVENT_DATE ở JS để đếm ngược đúng) -->
-        <div class="value">08:00, Thứ Bảy</div>
-        <div class="sub">Ngày 12 tháng 09 năm 2026</div>
+        <div class="value">09:00, Thứ Bảy</div>
+        <div class="sub">Ngày 22 tháng 08 năm 2026</div>
       </div>
       <div class="event-card">
         <div class="label">Địa điểm</div>
         <!-- ĐỔI TÊN ĐỊA ĐIỂM & ĐỊA CHỈ Ở ĐÂY -->
-        <div class="value">Hội trường A5</div>
-        <div class="sub">Trường Đại học Kiến trúc, Hà Nội</div>
-        <a class="btn-outline" href="https://maps.google.com/?q=Truong+Dai+hoc+Kien+truc+Ha+Noi" target="_blank" rel="noopener">Xem bản đồ</a>
+        <div class="value">Hội trường 101</div>
+        <div class="sub">Trường Học viện Tài chính, Hà Nội</div>
+        <a class="btn-outline" href="https://www.google.com/maps/place/Khu+C,+%C4%90%C3%B4ng+Ng%E1%BA%A1c,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0747541,105.7724451,658m/data=!3m1!1e3!4m6!3m5!1s0x31345531a8f1902d:0xb0fd1a13e239746e!8m2!3d21.0753402!4d105.772817!16s%2Fg%2F12hk32cbj?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Xem bản đồ</a>
       </div>
     </div>
   </div>
@@ -320,7 +320,7 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
 <footer>
   <span class="eyebrow" style="color:var(--gold-lt)">Trân trọng</span>
   <!-- ĐỔI TÊN GIA ĐÌNH / LỚP Ở ĐÂY -->
-  <div class="fam">Gia đình Cấn Thị Thu Hương</div>
+  <div class="fam">Mến</div>
   <div class="fine">Rất hân hạnh được đón tiếp</div>
 </footer>
 
@@ -331,19 +331,19 @@ footer .fine{margin-top:18px; font-size:.75rem; color:rgba(247,242,230,.5); lett
    ============================================================ */
 
 // 1) Ngày giờ sự kiện — dùng để đếm ngược (định dạng: "YYYY-MM-DDTHH:mm:ss")
-const EVENT_DATE = new Date("2026-09-12T08:00:00");
+const EVENT_DATE = new Date("2026-08-22T09:00:00");
 
 // 2) Nhạc nền — đổi tên file / link mp3 tại thẻ <audio id="bgm"> phía trên
 
 // 3) ALBUM ẢNH — thêm/xoá/sửa từng dòng {src: "...", caption: "..."}
 //    src có thể là link ảnh (https://...) hoặc tên file ảnh cùng thư mục (vd: "anh1.jpg")
 const PHOTOS = [
-  { src: "https://placehold.co/600x800/17362a/f7f2e6?text=Anh+1", caption: "Ngày nhận bằng tốt nghiệp" },
-  { src: "https://placehold.co/600x800/2c5641/f7f2e6?text=Anh+2", caption: "Cùng bạn bè giảng đường" },
-  { src: "https://placehold.co/600x800/c8a24d/17362a?text=Anh+3", caption: "Khoảnh khắc tung mũ" },
-  { src: "https://placehold.co/600x800/17362a/f7f2e6?text=Anh+4", caption: "Bên thầy cô kính yêu" },
-  { src: "https://placehold.co/600x800/2c5641/f7f2e6?text=Anh+5", caption: "Gia đình là điểm tựa" },
-  { src: "https://placehold.co/600x800/c8a24d/17362a?text=Anh+6", caption: "Chặng đường đã qua" }
+  { src: "C:/Users/huung/Downloads/1.jpg", caption: "Ngày nhận bằng tốt nghiệp" },
+  { src: "C:/Users/huung/Downloads/2.jpg", caption: "Cùng bạn bè giảng đường" },
+  { src: "C:/Users/huung/Downloads/3.jpg", caption: "Khoảnh khắc tung mũ" },
+  { src: "C:/Users/huung/Downloads/4.jpg", caption: "Bên thầy cô kính yêu" },
+  { src: "C:/Users/huung/Downloads/5.jpg", caption: "Gia đình là điểm tựa" },
+  { src: "C:/Users/huung/Downloads/6.jpg", caption: "Chặng đường đã qua" }
 ];
 
 /* ============================================================
